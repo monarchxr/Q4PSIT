@@ -1,0 +1,91 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url("idk.jpeg"); */
+    background-color: #181a1b;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.header{
+    padding:20px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.header h1{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.header p{
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.topnav{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.topnav a{
+
+    color: rgb(8, 80, 152);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: grey;
+    color: white;
+}
+
+.topnav a.active:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+@media screen and(max-width: 600px) {
+    .topnav a:not(:first-child){display: none;}
+    .topnav a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+#about-site{
+    margin: 50px;
+    padding: 30px;
+    background-color: rgba(51, 51, 51, 0.7);
+    text-align: left;
+    max-width: 1200px;
+}
+
+#about-site h2{
+    /* text-decoration: underline; */
+    color: white;
+    background-color: black;
+}
+
+#about-site p{
+    color: lightskyblue;
+}
